@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/bg_main">
+    <!-- toolbar开始 -->
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="60px"
+                    android:background="@drawable/bg_navbar">
+
+        <RelativeLayout android:id="@+id/toolbar_add_recommend_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:clickable="true">
+            <ImageView android:src="@drawable/btn_cancel"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/toolbar_add_recommend_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="我要推荐"
+                      android:textSize="18dp"
+                      style="@style/color_white"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <!-- toolbar结束 -->
+
+
+    <!-- 我购买的宝贝 -->
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="20px">
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/my_buy_record"
+                      android:textSize="15dp"/>
+        </RelativeLayout>
+
+        <!--我购买过的宝贝的列表-->
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="宝贝列表"
+                      android:textSize="15dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <!-- 分类 -->
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="20px">
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/category"
+                      android:textSize="15dp"/>
+        </RelativeLayout>
+
+        <!--分类列表-->
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="分类列表"
+                      android:textSize="15dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <!--推荐理由 -->
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="20px">
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/recommend_reason"
+                      android:textSize="15dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="推荐理由"
+                      android:textSize="15dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

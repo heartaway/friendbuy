@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/bg_main">
+    <!-- toolbar开始 -->
+    <RelativeLayout android:layout_width="fill_parent"
+                    android:layout_height="60px"
+                    android:background="@drawable/bg_navbar">
+
+        <RelativeLayout android:id="@+id/toolbar_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dip"
+                        android:clickable="true">
+            <ImageView android:src="@drawable/icon_nav_arrow"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content">
+            </ImageView>
+        </RelativeLayout>
+
+        <RelativeLayout android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="@string/toolbar_login"
+                      android:textSize="18dp"
+                      style="@style/color_white"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <!-- toolbar结束 -->
+
+
+    <!-- 登陆框主体开始 -->
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30px"
+            >
+
+        <!-- 登陆帐号的输入框-->
+        <EditText
+                android:id="@+id/login_id"
+                android:layout_width="fill_parent"
+                android:layout_height="60px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:textColor="#a9a9a9"
+                android:background="#FFFFFF"
+                android:textSize="16dp"
+                android:hint="@string/hint_username"
+    			android:inputType="text"
+    			android:text="c测试账号38"
+                />
+
+        <View
+                android:id="@+id/login_line"
+                android:layout_below="@id/login_id"
+                android:layout_height="1px"
+              	android:background="#c0c0c0"
+              	android:layout_width="fill_parent"
+              	android:layout_marginLeft="20px"
+              	android:layout_marginRight="20px"></View>
+
+
+        <!-- 登陆密码的输入框 -->
+        <EditText
+                android:id="@+id/login_password"
+                android:layout_width="fill_parent"
+                android:layout_height="60px"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:paddingLeft="10px"
+                android:paddingRight="10px"
+                android:layout_below="@id/login_line"
+                android:textColor="#a9a9a9"
+                android:background="#FFFFFF"
+                android:textSize="16dp"
+                android:hint="@string/hint_pwd"
+    			android:inputType="textPassword"
+    			android:text="taobao1234"
+                />
+    </RelativeLayout>
+    <!-- 登陆框主体结果 -->
+
+    <!-- 登录按钮-->
+    <Button android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="30px"
+            android:id="@+id/login_btn"
+            android:text="@string/login_text"
+            android:background="#6b8e23"
+            android:textSize="18dp"
+            />
+
+</LinearLayout>
